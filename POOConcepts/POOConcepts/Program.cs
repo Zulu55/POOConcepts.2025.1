@@ -2,17 +2,15 @@
 
 try
 {
-    var date1 = new Date();
-    var date2 = new Date(1974, 12, 3);
-    var date3 = new Date(2020, 2, 29);
+    var secretary = new SalaryEmployee(1, "Sandra", "Martinez", true, new Date(1981, 11, 14), new Date(2022, 12, 14), 2500000M);
+    var manager = new SalaryEmployee(2, "Fabio", "Ochoa", true, new Date(1971, 11, 14), new Date(2002, 12, 14), 11756324.15M);
 
-    date1.Year = 2025;
-    date1.Month = 2;
-    date1.Day = 13;
-
-    Console.WriteLine(date1);
-    Console.WriteLine(date2);
-    Console.WriteLine(date3);
+    var employees = new List<Employee>() { secretary, manager };
+    foreach (var employee in employees)
+    {
+        Console.WriteLine(employee);
+        Console.WriteLine("---------------------------------------------");
+    }
 }
 catch (Exception ex)
 {
