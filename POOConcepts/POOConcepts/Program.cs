@@ -11,11 +11,25 @@ try
 
     var employees = new List<Employee>() { secretary, manager, washer, salesPerson1, salesPerson2, salesPerson3 };
     var total = 0M;
+    Console.WriteLine("PAYROLL");
     foreach (var employee in employees)
     {
         Console.WriteLine(employee);
         Console.WriteLine("---------------------------------------------");
         total += employee.GetValueToPay();
+    }
+
+    var invoioce1 = new Invoice(1, "Sillas", new Date(2025, 2, 27), 800000M, 6);
+    var invoioce2 = new Invoice(2, "Papel", new Date(2025, 2, 27), 56000M, 12);
+    var invoioce3 = new Invoice(3, "Portatil Dell", new Date(2025, 2, 27), 2567789M, 3);
+    var invoices = new List<Invoice>() { invoioce1, invoioce2, invoioce3 };
+
+    Console.WriteLine("EXPENSES");
+    foreach (var invoice in invoices)
+    {
+        Console.WriteLine(invoice);
+        Console.WriteLine("---------------------------------------------");
+        total += invoice.GetValueToPay();
     }
     Console.WriteLine($"TOTAL..................: {total,20:C2}");
 }

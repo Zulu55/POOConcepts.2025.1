@@ -23,6 +23,7 @@
       <Property Name="BornDate" />
       <Property Name="HireDate" />
     </ShowAsAssociation>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="POOConcepts.SalaryEmployee">
     <Position X="11.75" Y="2.75" Width="1.5" />
@@ -61,5 +62,23 @@
       <FileName>BaseComissionEmployee.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="POOConcepts.Invoice">
+    <Position X="14.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABACAAAAAAAgAAAFAAAAAAAAAAAAAAAJAAIggAAAgAA=</HashCode>
+      <FileName>Invoice.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Date" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="POOConcepts.IPay">
+    <Position X="14.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>IPay.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
