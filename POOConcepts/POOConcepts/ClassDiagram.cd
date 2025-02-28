@@ -54,5 +54,12 @@
       <FileName>ComissionEmployee.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="POOConcepts.BaseComissionEmployee">
+    <Position X="5.75" Y="6.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ACAAACAAAAAAAAAEAAAAAAAAAAAAAAAIAAAAAAQAAAA=</HashCode>
+      <FileName>BaseComissionEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
