@@ -14,8 +14,8 @@ public abstract class Employee
 
     public int Id { get; set; }
     public string FirstName { get; set; } = null!;
-    private string LastName { get; set; } = null!;
-    private bool IsActive { get; set; }
+    public string LastName { get; set; } = null!;
+    public bool IsActive { get; set; }
     public Date? BornDate { get; set; }
     public Date? HireDate { get; set; }
 

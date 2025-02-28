@@ -1,14 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="POOConcepts.Date">
-    <Position X="5.5" Y="2.25" Width="2.25" />
+    <Position X="8.75" Y="6" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAJAAAAAAEAAEAAAMAAAAAAACEMAAAAAAAAAA=</HashCode>
       <FileName>Date.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="POOConcepts.Employee">
-    <Position X="9.75" Y="2.75" Width="1.5" />
+    <Position X="9" Y="2.75" Width="1.5" />
+    <AssociationLine Name="BornDate" Type="POOConcepts.Date" FixedFromPoint="true">
+      <Path>
+        <Point X="9.312" Y="5.267" />
+        <Point X="9.312" Y="6" />
+      </Path>
+    </AssociationLine>
     <TypeIdentifier>
       <HashCode>ABACAEAAAAAAAAAEEAAAAAAAACAAAAAIAAAAAAAAAAg=</HashCode>
       <FileName>Employee.cs</FileName>
@@ -17,6 +23,29 @@
       <Property Name="BornDate" />
       <Property Name="HireDate" />
     </ShowAsAssociation>
+  </Class>
+  <Class Name="POOConcepts.SalaryEmployee">
+    <Position X="11.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAACAAAAAAAAAEAAAAAAAAAAAAAAAIAAAAAAQAAAA=</HashCode>
+      <FileName>SalaryEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POOConcepts.HourlyEmployee">
+    <Position X="11.75" Y="6" Width="2" />
+    <InheritanceLine Type="POOConcepts.Employee" FixedFromPoint="true">
+      <Path>
+        <Point X="10.5" Y="4.75" />
+        <Point X="10.8" Y="4.75" />
+        <Point X="10.8" Y="5.7" />
+        <Point X="12.75" Y="5.7" />
+        <Point X="12.75" Y="6" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AKAAAAAAAAAAAAAEAAgAAAAAAAAAAABIAAAAAgAAAAE=</HashCode>
+      <FileName>HourlyEmployee.cs</FileName>
+    </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
